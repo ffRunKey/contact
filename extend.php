@@ -1,15 +1,5 @@
 <?php
 
-/**
- *  This file is part of tonysw/test-flarum.
- *
- *  Copyright (c) 2018 .
- *
- *
- *  For the full copyright and license information, please view the LICENSE.md
- *  file that was distributed with this source code.
- */
-
 namespace ffRunKey\Contacts;
 
 use Flarum\Extend;
@@ -26,8 +16,6 @@ return [
 
 	(new Extend\Frontend('forum'))
         ->js(__DIR__.'/js/dist/forum.js'),
-        //->css(__DIR__.'/less/forum.less')
-        //->route('/following', 'following'),
 		
 	function (Dispatcher $events, Factory $views) {
         $events->subscribe(Listener\SaveContactToDatabase::class);

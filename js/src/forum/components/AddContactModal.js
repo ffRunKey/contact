@@ -4,10 +4,6 @@ import Badge from 'flarum/components/Badge';
 import Group from 'flarum/models/Group';
 import ItemList from 'flarum/utils/ItemList';
 
-/**
- * The `EditGroupModal` component shows a modal dialog which allows the user
- * to create or edit a group.
- */
 export default class AddContactModal extends Modal {
   init() {
 	
