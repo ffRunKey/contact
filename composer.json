@@ -1,0 +1,34 @@
+{
+    "name": "ffrunkey/contact",
+	"description": "Add user contact information for Flarum",
+    "authors": [
+        {
+            "name": "Tony Tong",
+            "email": "85291404@qq.com"
+        }
+    ],
+	"type": "flarum-extension",
+    "license": "MIT",
+	"support": {
+        "issues": "https://github.com/ffrunkey/contact/issues",
+        "source": "https://github.com/ffrunkey/contact"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ffRunKey\\Contacts\\": "src/"
+        }
+    },
+	"extra": {
+        "flarum-extension": {
+            "title": "Contact",
+            "icon": {
+                "name": "globe",
+                "backgroundColor": "#dad4b9",
+                "color": "#ffffff"				
+            }
+        }
+    }
+}
