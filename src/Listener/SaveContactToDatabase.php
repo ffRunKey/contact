@@ -45,7 +45,7 @@ class SaveContactToDatabase
 				$contact->work_qq = $attributes['contactData']['work_qq'];
 				$contact->work_company = $attributes['contactData']['work_company'];
 				$contact->department = $attributes['contactData']['department'];
-				$contact->edited_at = Carbon::now();
+				$contact->updated_at = Carbon::now();
 				$contact->save();
 			}else{
 				$contact = Contact::build($actor,
