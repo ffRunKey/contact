@@ -9,11 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Dev\Contacts\Listener;
+namespace ffRunKey\Contacts\Listener;
 
 use Flarum\Api\Event\Serializing;
-use Dev\Logistics\Api\Serializer\FreightSerializer;
-use Dev\Logistics\Freight\Freight;
 use Illuminate\Contracts\Events\Dispatcher;
 use Flarum\Api\Event\WillGetData;
 use Flarum\Event\GetApiRelationship;
@@ -21,8 +19,8 @@ use Flarum\Event\GetModelRelationship;
 use Flarum\User\User;
 use Flarum\Api\Serializer\UserSerializer;
 use Flarum\Api\Serializer\BasicUserSerializer;
-use Dev\Contacts\Contact;
-use Dev\Contacts\Api\Serializer\ContactSerializer;
+use ffRunKey\Contacts\Contact;
+use ffRunKey\Contacts\Api\Serializer\ContactSerializer;
 
 class AddUserContactAttribute
 {

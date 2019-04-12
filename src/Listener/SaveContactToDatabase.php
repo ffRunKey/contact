@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Dev\Contacts\Listener;
+namespace ffRunKey\Contacts\Listener;
 
 use Flarum\User\Event\Saving;
 use Flarum\User\AssertPermissionTrait;
 use Illuminate\Contracts\Events\Dispatcher;
-use Dev\Contacts\Contact;
+use ffRunKey\Contacts\Contact;
 use Carbon\Carbon;
 
 class SaveContactToDatabase

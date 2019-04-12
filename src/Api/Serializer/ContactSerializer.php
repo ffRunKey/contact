@@ -1,6 +1,6 @@
 <?php
 
-namespace Dev\Contacts\Api\Serializer;
+namespace ffRunKey\Contacts\Api\Serializer;
 
 use Flarum\Api\Serializer\AbstractSerializer;
 

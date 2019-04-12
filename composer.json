@@ -25,7 +25,7 @@
         "flarum-extension": {
             "title": "Contact",
             "icon": {
-                "name": "globe",
+                "name": "fas fa-address-card",
                 "backgroundColor": "#dad4b9",
                 "color": "#ffffff"				
             }
