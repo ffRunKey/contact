@@ -8,13 +8,22 @@ export default class AddContactModal extends Modal {
   init() {
 	
 	this.contact = app.session.user.contact();
-	
-	this.realname = m.prop(this.contact.name() || '');
-	this.work_company = m.prop(this.contact.work_company() || '');
-	this.primary_address = m.prop(this.contact.primary_address() || '');
-	this.phone_mobile = m.prop(this.contact.phone_mobile() || '');		
-	this.department = m.prop(this.contact.department() || '');
-	this.work_qq = m.prop(this.contact.work_qq() || '');
+	if(this.contact)
+	{
+	    this.realname = m.prop(this.contact.name() || '');
+	    this.work_company = m.prop(this.contact.work_company() || '');
+	    this.primary_address = m.prop(this.contact.primary_address() || '');
+	    this.phone_mobile = m.prop(this.contact.phone_mobile() || '');		
+	    this.department = m.prop(this.contact.department() || '');
+	    this.work_qq = m.prop(this.contact.work_qq() || '');
+	}else{
+		this.realname = m.prop('');
+	    this.work_company = m.prop('');
+	    this.primary_address = m.prop('');
+	    this.phone_mobile = m.prop('');		
+	    this.department = m.prop('');
+	    this.work_qq = m.prop('');
+	}
 	
   }
 
